@@ -7,6 +7,20 @@ body {
     margin: 0;
 }
 
+.bi {
+    fill: green !important;
+    position: fixed !important;
+    /* Fixa o elemento na tela */
+    right: 30px !important;
+    /* Distância da borda direita */
+    bottom: 40px !important;
+    /* Distância da borda inferior */
+    cursor: pointer;
+    z-index: 9999;
+    /* Coloca o elemento acima de todos os outros */
+}
+
+
 #logo {
     width: 260px;
     margin-top: 20px;
@@ -48,6 +62,7 @@ body {
 .img1 {
     width: 100%;
     height: auto;
+    max-width: 4000px;
 }
 
 /* Estilo do h1 */
@@ -76,16 +91,128 @@ body {
         font-size: 50px;
     }
 }
-.bi {
-    fill: green !important;
-    position: absolute !important;
-    right: 30px !important;  /* Alteração de posicionamento */
-    bottom: 40px;
-    cursor: pointer;
-}
+
 
 @media (max-width: 768px) {
     .texto2 {
         font-size: 18px;
+    }
+}
+
+.texto3 {
+    margin: 20px 0px;
+}
+
+.image-overlay-container {
+    width: 100%;
+    margin: 20px 0px;
+    position: relative;
+    display: inline-block;
+    /* Garante que o contêiner só ocupe o espaço necessário */
+}
+
+.penultimate-image {
+    width: 100%;
+    /* Ocupa todo o espaço disponível no contêiner */
+    height: auto;
+    max-width: 4000px;
+    top: 50%;
+    /* Alinha verticalmente no centro */
+    left: 50%;
+    /* Alinha horizontalmente no centro */
+}
+
+.last-image {
+    position: absolute;
+    top: 50%;
+    /* Centraliza verticalmente */
+    left: 50%;
+    /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta o ponto de referência para o centro */
+    width: 100%;
+    /* Ajuste o tamanho da última imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    max-width: 4000px;
+
+}
+
+.texto-especialista {
+    position: absolute;
+    top: 50%;
+    /* Alinha verticalmente no centro */
+    left: 50%;
+    /* Alinha horizontalmente no centro */
+    transform: translate(-50%, -50%);
+    /* Centraliza tanto horizontalmente quanto verticalmente */
+    text-align: center;
+    /* Garante que o texto fique alinhado ao centro internamente */
+    color: WHITE;
+}
+
+.btn-agenda {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    list-style: none;
+    border: white solid 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #236192;
+
+}
+
+.btn-agenda:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .texto-especialista {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-agenda {
+        font-size: 12px;
+        border-top: 5px;
+        border-bottom: 5px;
+        top: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bi {
+        width: 40px;
+    }
+}
+
+.paragraf {
+    font-size: 16px;
+    color: #236192;
+    font-style: oblique;
+}
+
+@media(max-width: 768px) {
+    .paragraf {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+#centro {
+    background-color: rgb(207, 209, 209);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 5px 10px;
+}
+
+@media(max-width: 768px) {
+    #centro {
+        width: 90%;
+        margin: 0 auto;
     }
 }
