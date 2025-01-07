@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Escritório</title>
+    <link rel="stylesheet" href="./escritorio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--navbar e logo-->
+    <img src="./imagens/logo pedro.png" id="logo" alt="Logo Pedro Carvalho Advocacia">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav justify-content-center">
+                <a class="nav-item nav-link" href="./index.html" style="color: black;">Home</a>
+                <a class="nav-item nav-link" href="./escritorio.html" style="color: black;">O Escritório</a>
+                <a class="nav-item nav-link" href="#" style="color: black;">Dúvidas</a>
+                <a class="nav-item nav-link" href="#" style="color: black;">Contato</a>
+            </div>
+        </div>
+    </nav>
+    <!--navbar e logo-->
+
+    <h1 style="color: #236192; margin: 40px;"><B>O ESCRITÓRIO</B></h1>
+    <div id="container">
+        <img src="./imagens/escritorio.jpg" id="img-escritorio" alt="Escritório Jurídico" style="max-width: 40%; margin-right: 20px;">
+        <p style="flex: 1; text-align: justify; ">
+            Seja bem-vindo ao Escritório Jurídico Dr. Manoel Pedro de Carvalho, referência em excelência e comprometimento no
+            campo do Direito. Atuamos com dedicação para oferecer soluções jurídicas personalizadas, pautadas em ética,
+            transparência e um profundo conhecimento das leis.<br><br>
+    
+            Com vasta experiência em diversas áreas do Direito, como cível, trabalhista, empresarial e tributário, nosso
+            objetivo é garantir aos nossos clientes um atendimento de alta qualidade, sempre buscando os melhores resultados
+            para cada caso.<br><br>
+    
+            Estamos prontos para atender pessoas físicas e jurídicas, com uma abordagem estratégica que alia inovação,
+            estudo contínuo e foco na resolução de conflitos de forma eficiente e eficaz.<br><br>
+    
+            Confie no Escritório Jurídico Dr. Manoel Pedro de Carvalho para cuidar dos seus interesses com o
+            profissionalismo que você merece. Agende uma consulta e descubra como podemos ajudá-lo!<br>
+        </p>
+    </div>
+    
+
+</body>
+
+
+
+
+
+
+<footer
+    style="background-color:rgb(207, 209, 209); padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; width: 100%; box-sizing: border-box; margin-top: 100px;">
+    <!-- Logo no canto esquerdo -->
+    <div style="flex: 0 0 auto; order: 0;">
+        <img src="./imagens/logo pedro.png" alt="Logo" style="height: 150px;" id="logo-rodape">
+    </div>
+
+    <!-- Informações de contato e onde estamos -->
+    <div style="flex: 1; text-align: right;">
+        <p><strong>Nossos Contatos:</strong></p>
+        <p>Email: ad.mayconaladino@gmail.com</p>
+        <p>Telefone: (92) 98423-0110</p>
+
+        <p><strong>Onde Estamos:</strong></p>
+        <p>Rua Exemplo, 123 - Bairro - Cidade - Estado</p>
+    </div>
+</footer>
+
+<!-- Estilo responsivo para mover a logo para o final em telas pequenas -->
+<style>
+    @media (max-width: 768px) {
+        footer {
+            flex-direction: column;
+            /* Empilha os itens na vertical em telas pequenas */
+            text-align: center;
+            /* Centraliza o texto quando a tela é pequena */
+        }
+
+        footer>div:first-child {
+            order: 2;
+            /* Coloca o bloco de informações de contato abaixo da logo */
+        }
+
+        footer>div:last-child {
+            order: 1;
+            /* Coloca a logo no final quando a tela é pequena */
+        }
+    }
+</style>
+
+</html>
