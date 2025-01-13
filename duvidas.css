@@ -99,3 +99,20 @@ body {
     line-height: 1.6;
     color: #555;
 }
+.bi {
+    fill: green !important;
+    position: fixed !important;
+    /* Fixa o elemento na tela */
+    right: 30px !important;
+    /* Distância da borda direita */
+    bottom: 40px !important;
+    /* Distância da borda inferior */
+    cursor: pointer;
+    z-index: 9999;
+    /* Coloca o elemento acima de todos os outros */
+}
+@media (max-width: 768px) {
+    .bi {
+        width: 40px;
+    }
+}
