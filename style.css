@@ -268,3 +268,16 @@ body {
         width: 100px;
     }
 }
+/* Defina o estado inicial dos elementos ocultos */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 3s ease, transform 3s ease;
+  }
+  
+  /* Defina o estado quando os elementos se tornam visíveis */
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
